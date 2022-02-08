@@ -1,4 +1,5 @@
 import SongRow from "./SongRow";
+import Table from "react-bootstrap/Table";
 
 export default function SongLibraray({ songs }) {
     const rows = [];
@@ -8,7 +9,7 @@ export default function SongLibraray({ songs }) {
     });
 
     return (
-        <table>
+        <Table hover size="sm">
             <thead>
                 <tr>
                     <th>Title</th>
@@ -17,6 +18,6 @@ export default function SongLibraray({ songs }) {
                 </tr>
             </thead>
             <tbody>{rows}</tbody>
-        </table>
+        </Table>
     );
 }

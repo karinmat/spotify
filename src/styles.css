@@ -1,30 +1,38 @@
+html,
+body {
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+}
+
 .App {
     font-family: sans-serif;
     text-align: center;
 }
 
 table {
-    width: 400px;
     background-color: #121212;
-    width: 100%;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 th {
-    /*color: #a7a7a7;*/
-    text-align: center;
+    color: #a7a7a7;
+    border: #181818;
 }
 
 tr {
     color: #fff;
-    text-align: left;
+    border: #181818;
 }
 
 .PlayerBar {
     color: #fff;
     background-color: #181818;
     border-color: transparent;
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    height: 50px;
+    margin-top: -50px;
     width: 100%;
+    bottom: 0;
+    position: fixed;
 }
