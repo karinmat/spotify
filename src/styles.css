@@ -11,7 +11,8 @@ body {
 
 .UpperBar {
     color: #fff;
-    background-color: #181818;
+    background-color: black;
+    height: 100%;
 }
 
 .logo {
@@ -20,8 +21,6 @@ body {
 
 table {
     background-color: #121212;
-    margin-bottom: 200px;
-    padding-bottom: 50px;
 }
 
 th {
