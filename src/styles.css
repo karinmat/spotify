@@ -9,6 +9,15 @@ body {
     text-align: center;
 }
 
+.UpperBar {
+    color: #fff;
+    background-color: #181818;
+}
+
+.logo {
+    text-align: left;
+}
+
 table {
     background-color: #121212;
     margin-bottom: 200px;

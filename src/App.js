@@ -1,6 +1,7 @@
 import "./styles.css";
 import SongLibrary from "./components/SongLibrary";
 import PlayerBar from "./components/PlayerBar";
+import UpperBar from "./components/UpperBar";
 
 export default function App() {
     let songs = [
@@ -129,6 +130,7 @@ export default function App() {
     return (
         <div className="App">
             <div className="Wrapper">
+                <UpperBar />
                 <SongLibrary songs={songs} />
                 <PlayerBar currentSong={songs[0].title} />
             </div>
