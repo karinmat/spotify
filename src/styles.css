@@ -1,4 +1,30 @@
 .App {
-  font-family: sans-serif;
-  text-align: center;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+table {
+    width: 400px;
+    background-color: #121212;
+    width: 100%;
+}
+
+th {
+    /*color: #a7a7a7;*/
+    text-align: center;
+}
+
+tr {
+    color: #fff;
+    text-align: left;
+}
+
+.PlayerBar {
+    color: #fff;
+    background-color: #181818;
+    border-color: transparent;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
