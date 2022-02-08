@@ -1,10 +1,14 @@
 import "./styles.css";
+import SongLibrary from "./components/SongLibrary";
+import PlayerBar from "./components/PlayerBar";
 
 export default function App() {
+    let songs = [{ title: "thank u, next", artist: "Ariana Grande" }];
+
     return (
         <div className="App">
-            <h1>Hello CodeSandbox</h1>
-            <h2>Start editing to see some magic happen!</h2>
+            <SongLibrary songs={songs} />
+            <PlayerBar currentSong={songs[0].title} />
         </div>
     );
 }
