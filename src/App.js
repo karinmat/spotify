@@ -3,7 +3,13 @@ import SongLibrary from "./components/SongLibrary";
 import PlayerBar from "./components/PlayerBar";
 
 export default function App() {
-    let songs = [{ title: "thank u, next", artist: "Ariana Grande" }];
+    let songs = [
+        {
+            title: "thank u, next",
+            album: "thank u, next",
+            artist: "Ariana Grande"
+        }
+    ];
 
     return (
         <div className="App">
