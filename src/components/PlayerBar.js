@@ -3,7 +3,9 @@ import Player from "./Player";
 export default function PlayerBar({ currentSong }) {
     return (
         <div className="PlayerBar">
-            current song is {currentSong}
+            <div className="CurrentSongInfo" style={{ textAlign: "left" }}>
+                current song is: {currentSong}
+            </div>
             <Player />
         </div>
     );
