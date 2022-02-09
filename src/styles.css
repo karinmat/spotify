@@ -42,13 +42,29 @@ tr {
     border: #181818;
 }
 
-.PlayerBar {
-    color: #fff;
-    background-color: #181818;
-    border-color: transparent;
+.Footer {
     height: 50px;
     margin-top: -50px;
     width: 100%;
     bottom: 0;
     position: fixed;
+}
+
+.PlayerBar {
+    color: #fff;
+    background-color: #181818;
+    border-color: transparent;
+    display: -webkit-flex;
+    width: 100%;
+}
+
+.CurrentSongInfo {
+    display: -webkit-flex;
+    width: 20%;
+}
+
+.Player {
+    padding: 10px;
+    width: 80%;
+    text-align: center;
 }
