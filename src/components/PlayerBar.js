@@ -8,7 +8,11 @@ export default function PlayerBar({ currentSong, nextSong, prevSong }) {
                 <div className="CurrentSongInfo" style={{ textAlign: "left" }}>
                     current song is: {title}
                 </div>
-                <Player nextSong={nextSong} prevSong={prevSong} />
+                <Player
+                    nextSong={nextSong}
+                    prevSong={prevSong}
+                    currentSong={currentSong}
+                />
             </div>
         </div>
     );

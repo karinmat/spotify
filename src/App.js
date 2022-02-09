@@ -4,12 +4,18 @@ import SongLibrary from "./components/SongLibrary";
 import PlayerBar from "./components/PlayerBar";
 import UpperBar from "./components/UpperBar";
 
+import s from "./images/Ariana_Grande_thank_u_next";
+
 export default function App() {
     const [songs, setSongs] = useState(songs_data);
     const [currentSongIndex, setCurrentSongIndex] = useState(0);
 
     let nextSong = () => {
-        setCurrentSongIndex(currentSongIndex + 1);
+        if (currentSongIndex < songs.length) {
+            setCurrentSongIndex(currentSongIndex + 1);
+        } else {
+            setCurrentSongIndex(0);
+        }
     };
 
     let prevSong = () => {
@@ -17,6 +23,7 @@ export default function App() {
             setCurrentSongIndex(currentSongIndex - 1);
         }
     };
+
     return (
         <div className="App">
             <div className="Wrapper">
@@ -35,12 +42,14 @@ let songs_data = [
     {
         title: "thank u, next",
         album: "thank u, next",
-        artist: "Ariana Grande"
+        artist: "Ariana Grande",
+        url: { s }
     },
     {
         title: "needy",
         album: "thank u, next",
-        artist: "Ariana Grande"
+        artist: "Ariana Grande",
+        url: { s }
     },
     {
         title: "fake smile",
