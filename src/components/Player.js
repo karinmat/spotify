@@ -6,7 +6,7 @@ import {
 } from "@ant-design/icons";
 export default function Player() {
     return (
-        <div style={{ marginBottom: "100px" }}>
+        <div className="Player">
             <Button>
                 <StepBackwardOutlined />
             </Button>
