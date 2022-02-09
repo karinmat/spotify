@@ -22,6 +22,12 @@ body {
 
 table {
     background-color: #121212;
+    margin-bottom: 500px;
+}
+
+.table-hover {
+    --bs-table-hover-color: #1ed760;
+    --bs-table-hover-bg: #9d8f8f2e;
 }
 
 th {
