@@ -20,9 +20,9 @@ export default function Player({ nextSong, prevSong, currentSong }) {
                 </Button>
             </div>
             <audio
+                src={currentSong.url}
                 controls
                 key={currentSong.title + currentSong.artist}
-                src={currentSong.url}
             >
                 <source src={currentSong.url} type="audio/mpeg" />
                 Your browser does not support the audio element.

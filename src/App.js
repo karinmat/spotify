@@ -5,6 +5,7 @@ import PlayerBar from "./components/PlayerBar";
 import UpperBar from "./components/UpperBar";
 
 import s from "./images/Ariana_Grande_thank_u_next";
+import s1 from "./images/Ariana Grande_needy.mp3";
 
 export default function App() {
     const [songs, setSongs] = useState(songs_data);
@@ -49,7 +50,7 @@ let songs_data = [
         title: "needy",
         album: "thank u, next",
         artist: "Ariana Grande",
-        url: { s }
+        url: { s1 }
     },
     {
         title: "fake smile",
