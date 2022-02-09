@@ -4,17 +4,18 @@ import {
     CaretRightOutlined,
     StepBackwardOutlined
 } from "@ant-design/icons";
-export default function Player() {
+
+export default function Player({ nextSong, prevSong }) {
     return (
         <div className="Player">
-            <Button>
+            <Button onClick={prevSong}>
                 <StepBackwardOutlined />
             </Button>
             <Button>
-                <StepForwardOutlined />
-            </Button>
-            <Button>
                 <CaretRightOutlined />
+            </Button>
+            <Button onClick={nextSong}>
+                <StepForwardOutlined />
             </Button>
         </div>
     );

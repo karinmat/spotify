@@ -9,15 +9,18 @@ export default function SongLibraray({ songs }) {
     });
 
     return (
-        <Table hover size="sm">
-            <thead>
-                <tr>
-                    <th>Title</th>
-                    <th>Album</th>
-                    <th>Artist</th>
-                </tr>
-            </thead>
-            <tbody>{rows}</tbody>
-        </Table>
+        <div className="SongLibrary">
+            <h1> Songs Library </h1>
+            <Table hover size="sm">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Album</th>
+                        <th>Artist</th>
+                    </tr>
+                </thead>
+                <tbody>{rows}</tbody>
+            </Table>
+        </div>
     );
 }
