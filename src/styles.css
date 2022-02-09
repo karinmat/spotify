@@ -1,7 +1,8 @@
 html,
 body {
-    min-height: 100%;
+    height: unset;
     margin: 0;
+    padding: 0;
     background-color: #121212;
 }
 
@@ -20,9 +21,10 @@ body {
     text-align: left;
 }
 
-table {
+.table {
     background-color: #121212;
-    margin-bottom: 500px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 .table-hover {
